@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping-cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    <header class="header">
+        <img class="cart-img" src="./img/Vector-cart.png" alt="cart-logo">
+        <div class="information-cart">
+            <h3 class="information-cart__title">Ваша корзина</h3>
+            <div id="information-cart__products-quantity" class="information-cart__products-quantity">3 товара</div>
+            <div id="information-cart__full-price rub" class="information-cart__full-price rub"></div>
+        </div>
+    </header>
+    <main class="main">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs__item">Корзина</li>
+        </ul>
+        <section class="cart">
+            <div class="products-wrapper">
+                <div class="cart__header">
+                    <h2 class="cart__title">Ваша корзина 
+                        <div id="product-quantity" class="product-quantity"></div> 
+                    </h2>
+                    <button id="cart__clear" class="cart__clear">Очистить корзину</button>
+                </div>
+                
+                <aside id="products-list" class="products-list"></aside> 
+                <div class="installation">
+                    <label class="installation__checkbox-group">
+                        <input id="installation__checkbox" class="installation__checkbox" type="checkbox" required></input>
+                        <div class="installation__checkbox-img"> </div>
+                        <div class="installation__text">
+                            <h3 class="installation__title">Установка</h3>
+                            <span>Отметьте, если Вам необходима консультация профессионала по монтажу выбранных товаров.</span>
+                        </div>
+                    </label>
+                    
+                </div>
+            </div>
+            <aside class="cart-wrapper">
+                <h2 class="cart-card__title">Итого</h2>
+                <div class="cart-card__item">
+                    <span>Сумма заказа</span> 
+                    <span id="order-amount__full-price" class="rub"></span> 
+                </div>
+                <div class="cart-card__item">
+                    <span>Количество</span>
+                    <span id="quantity-goods__quantity">4 шт</span>
+                </div>
+                <div class="cart-card__item">
+                    <span>Установка</span>
+                    <span id="installation__status">Нет</span>
+                </div>
+                <div class="cart-card__item last">
+                    <span>Стоимость товаров</span>
+                    <span id="cost-goods__full-price" class="rub"></span>
+                </div>
+                <button id="primary" class="cart-wrapper__button primary">Оформить заказ</button>
+                <button id="secondary" class="cart-wrapper__button secondary">Купить в 1 клик</button>
+            </aside>
+        </section>
+
+        <section id="viewed-products" class="viewed-products">
+            <h3 class="viewed-products__title">Просмотренные товары</h3>
+        </section>
+    </main>
+    <footer class="footer"></footer>  
+</body>
+</html>
